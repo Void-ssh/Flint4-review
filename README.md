@@ -793,6 +793,10 @@ Everything above was measured on firmware 4.9.1. The Flint 4 now runs **GL.iNet 
 
 **Resting load average.** On 4.9.1 the router idled at a load of about 2.3 with the CPU near zero (Section 10); on the 4.11 beta it idles at about 0.25. Load figures on this router now track real work, which is why the sustained-run numbers in Section 8 are easier to read than the 4.9.1 ones.
 
+The same LuCI Status page on the 4.11 beta, after a day and eight hours of uptime — OpenWrt 25.12-SNAPSHOT on Linux 6.12.94, a load average of 0.39 / 0.28 / 0.21, 41–42°C on every sensor, 4% CPU and 37% RAM used:
+
+![LuCI Status page on the 4.11 beta: OpenWrt 25.12, Linux 6.12.94, low load, 41–42°C](images/flint4-luci-status-4-11-beta.png)
+
 **A practical note for LuCI users.** On 4.11, the GL.iNet admin panel is where Wi-Fi and acceleration settings are managed. LuCI is still there and works well for everything else, but for those two areas I make changes in the GL.iNet panel rather than through LuCI's lower-level pages for the same settings.
 
 **What hasn't been repeated.** The only parts of Sections 8–9 re-run on the beta are the sustained WAN transfer, in both directions, and the direct-WAN Ookla test (see the Section 8 update): upload held 1.68 Gbit/s, while single-stream download averaged 1.26 Gbit/s against ~1.56 on 4.9.1. Ookla's multi-stream test on the beta matched 4.9.1 (1,905.73 Mbps down / 1,817.92 up, against 1,901.91 / 1,760.96), so I read the iperf3 download gap as that one stream's path rather than the router, though one pair of tests can't prove it. Everything else in those sections — the 30-second LAN tests, Wi-Fi 7 and MLO — remains a 4.9.1 result. MLO in particular is exactly the kind of feature a new kernel and Wi-Fi driver stack can change, so the MLO findings in Section 9 describe 4.9.1, not necessarily where things stand today.
