@@ -791,11 +791,11 @@ Everything above was measured on firmware 4.9.1. The Flint 4 now runs **GL.iNet 
 - **On-router benchmarks** — storage, memory and crypto results, including how the Flint 4 compares with the Flint 2 and other GL.iNet routers, are in Section 8.
 - **Fan and temperatures** — the 4.11 betas expose the fan as a standard Linux PWM cooling device and the temperature sensors through the normal hwmon interfaces, which makes monitoring simpler than before.
 
-**Resting load average.** On 4.9.1 the router idled at a load of about 2.3 with the CPU near zero (Section 10); on the 4.11 beta it idles at about 0.25. Load figures on this router now track real work, which is why the sustained-run numbers in Section 8 are easier to read than the 4.9.1 ones.
+**Resting load average.** On 4.9.1 the router idled at a load of about 2.3 with the CPU near zero (Section 10); on the 4.11 beta it idles at roughly 0.1–0.3. Load figures on this router now track real work, which is why the sustained-run numbers in Section 8 are easier to read than the 4.9.1 ones.
 
-The same LuCI Status page on the 4.11 beta, after a day and eight hours of uptime — OpenWrt 25.12-SNAPSHOT on Linux 6.12.94, a load average of 0.39 / 0.28 / 0.21, 41–42°C on every sensor, 4% CPU and 37% RAM used:
+The same LuCI Status page on the 4.11 beta, after a day and eleven hours of uptime — OpenWrt 25.12-SNAPSHOT on Linux 6.12.94, a load average of 0.11 / 0.15 / 0.17, 42–43°C on every sensor, 4% CPU and 37% RAM used:
 
-![LuCI Status page on the 4.11 beta: OpenWrt 25.12, Linux 6.12.94, low load, 41–42°C](images/flint4-luci-status-4-11-beta.png)
+![LuCI Status page on the 4.11 beta: OpenWrt 25.12, Linux 6.12.94, low load, 42–43°C](images/flint4-luci-status-4-11-beta.png)
 
 **A practical note for LuCI users.** On 4.11, the GL.iNet admin panel is where Wi-Fi and acceleration settings are managed. LuCI is still there and works well for everything else, but for those two areas I make changes in the GL.iNet panel rather than through LuCI's lower-level pages for the same settings.
 
